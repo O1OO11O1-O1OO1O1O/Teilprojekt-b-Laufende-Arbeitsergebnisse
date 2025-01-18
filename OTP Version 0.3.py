@@ -22,13 +22,10 @@ if changer != 0:
             with open(r'E:\1_Marten\Jugend Forscht\2025\Code\Python\OTP\Auf Dateien zugreifen\Zahlen.txt', 'r') as Schlüsselspeicher:
                 GesSchlüsselspeicher = Schlüsselspeicher.read()
 
-            # Extrahiere die ersten Zeichen
             eingabeschlüssel = GesSchlüsselspeicher[:len(satz)]
 
-            # Entferne die ersten Zeichen aus dem Inhalt
             Schlüsselspeicherneu = GesSchlüsselspeicher[len(satz):]
-            
-            # Schreibe den neuen Inhalt zurück in die Datei
+
             with open(r'E:\1_Marten\Jugend Forscht\2025\Code\Python\OTP\Auf Dateien zugreifen\Zahlen.txt', 'w') as Schlüsselspeicher:
                 Schlüsselspeicher.write(Schlüsselspeicherneu)
 
